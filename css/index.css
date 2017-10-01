@@ -56,7 +56,7 @@ nav #brand-logo {
 /**Slider**/
 
 /*-------- don't use this csss remove this ----------------------*/
-.margin { margin-top:50px; }
+
 /*-------- don't use this csss remove this ----------------------*/
 
 
@@ -66,11 +66,7 @@ nav #brand-logo {
   padding: 0;
 }
 
-html, body {
-  font-size: 62.5%;
-  height: 100%;
-  overflow: hidden;
-}
+
 
 
 
