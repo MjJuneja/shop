@@ -78,6 +78,7 @@ svg {
 }
 
 .slider-container {
+  overflow-x: hidden !important;    
   position: relative;
   height: 100%;
   -webkit-user-select: none;
@@ -96,6 +97,7 @@ svg {
   transition: opacity 0.3s;
   will-change: opacity;
   opacity: 0;
+  
 }
 .slider-control.inactive:hover {
   cursor: auto;
@@ -394,4 +396,9 @@ a.slide__text-link:hover { text-decoration:none; color:#FFF;}
 
 footer .row_12 {
     background: #2a2a2a;
+}
+
+
+.showing{
+    display: none !important;
 }

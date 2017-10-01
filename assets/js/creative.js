@@ -11,9 +11,12 @@
     });
 
     // Closes responsive menu when a link is clicked
-    $('.navbar-collapse>ul>li>a').click(function() {
-        $('.navbar-collapse').collapse('hide');
+    $('.navbar-toggler').toggle(function(){
+       $('.navbar-collapse').addClass('showing'); 
     });
+//    $('.navbar-collapse>ul>li>a').click(function() {
+//        $('.navbar-collapse').collapse('hide');
+//    });
 
     // Collapse the navbar when page is scrolled
     $(window).scroll(function() {
