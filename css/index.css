@@ -177,6 +177,23 @@ footer a:hover {
     color: #333;
 }
 
+@media (max-width: 767px) {
+    
+    section .discription {
+        margin-top: 10px;
+    }
+    
+    #contact  {
+        padding: 15px;
+        padding-top: 40px;
+    }
+    
+    #contact form {
+        margin-bottom: 15px;
+    }
+    
+}
+
 /***************************/
 /**Slider**/
 
