@@ -1,191 +1,125 @@
 <!DOCTYPE html>
-<!-- saved from url=(0022)https://campusbox.org/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!--    <link rel="stylesheet" href="assets/css/font-awesome.min.css">-->
-    <meta name="description" content="">
-    <meta name="author" content="Campusbox">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Shop</title>
-    <meta name="theme-color" content="#149370">
-    <meta name="keywords" content="CampusBox, college,college events, college app, ">
-    <meta name="description" content="Campusbox makes college life less complicated and more connected.">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@campusboxapp">
-    <meta name="twitter:title" content="CampusBox">
-    <meta name="twitter:description" content="Campusbox makes college life less complicated and more connected.">
-    <meta name="twitter:image:src" content="https://campusbox.org/dist/assets/images/loading-logo.png">
-    <meta name="twitter:image:alt" content="CampusBox logo">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Campusbox">
-    <meta property="og:url" content="https://campusbox.org">
-    <meta property="og:title" content="Campusbox">
-    <meta property="og:image" content="https://campusbox.org/dist/assets/images/loading-logo.png">
-    <meta property="og:description" content="Campusbox makes college life less complicated and more connected.">
-    <!-- Bootstrap core CSS -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-<!--     Custom fonts for this template -->
-     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
-    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/main1.css" rel="stylesheet" type="text/css">
-    <link href="css/index.css" rel="stylesheet" type="text/css">
-    <!-- Plugin CSS -->
-    <!-- Custom styles for this template -->
-    <link href="assets/css/creative.css" rel="stylesheet">
-    <!-- Temporary navbar container fix -->
-    <link rel="manifest" href="https://campusbox.org/dist/manifest.webmanifest">
-    <link rel="search" type="application/opensearchdescription+xml" title="CampusBox.org" href="https://campusbox.org/dist/opensearch.xml">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">  
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <!-- Custom scripts for this template -->
-    <script src="assets/js/creative.js"></script>
-     
+    <link href="css/index.css" rel="stylesheet" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto+Slab:400,700" rel="stylesheet">
+    
     <style>
-    .parallax { 
-    /* The image used */
-/*    background-image: url("img/tnc.jpg");*/
-
-    /* Set a specific height */
-    height: 350px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .4);
-}
-    .navbar-toggler {
-        z-index: 10000;
-    }
-    
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
+        body {
+            padding: 0;
+            margin: 0;
+            padding-top: 50px;
+            overflow-x: hidden;
         }
-    }
+        
+        nav img {
+            height: 85px;
+            margin-top: -31px;
+        }
+        
+        #myCarousel {
+            margin-left: -30px;
+            margin-right: -30px;
+        }
+        
+        #myCarousel img {
+            height: 550px;
+        }
+        
+        
     </style>
-</head>
-
-<body id="page-top">
     
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav" style="position: fixed;">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="container topbar">
-            <a class="navbar-brand" href="#" style="
-    color: black;
-"><img src="assets/images/DEV%20logo5.png" id="brand-logo"></a>
-            <div class="collapse navbar-collapse" id="navbarExample">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CHINA TOWN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CYBER CAFE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">GENERAL STORE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">STATIONARY</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-       <div class="slider-container">
-  <div class="slider-control left inactive"></div>
-  <div class="slider-control right"></div>
-  <ul class="slider-pagi"></ul>
-  <div class="slider">
-    <div class="slide slide-0 active">
-      <div class="slide__bg"></div>
-      <div class="slide__content">
-        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-        </svg>
-        <div class="slide__text">
-          <h2 class="slide__text-heading">Project name 1</h2>
-          <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-          <a href="http://hkmbhutto.wix.com/abdulrasheed"
-          class="slide__text-link">Project link</a>
-        </div>
-      </div>
+    
+</head>
+<body>
+    
+          <!-- Navigation -->
+    <nav class="navbar navbar-fixed-top navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#"><img src="assets/images/DEV%20logo5.png" id="brand-logo"></a>
     </div>
-    <div class="slide slide-1 ">
-      <div class="slide__bg"></div>
-      <div class="slide__content">
-        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-        </svg>
-        <div class="slide__text">
-          <h2 class="slide__text-heading">Project name 2</h2>
-          <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-          <a href="http://hkmbhutto.wix.com/abdulrasheed" 
-          class="slide__text-link">Project link</a>
-        </div>
-      </div>
-    </div>
-    <div class="slide slide-2">
-      <div class="slide__bg"></div>
-      <div class="slide__content">
-        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-        </svg>
-        <div class="slide__text">
-          <h2 class="slide__text-heading">Project name 3</h2>
-          <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-          <a href="http://hkmbhutto.wix.com/abdulrasheed"
-          class="slide__text-link">Project link</a>
-        </div>
-      </div>
-    </div>
-    <div class="slide slide-3">
-      <div class="slide__bg"></div>
-      <div class="slide__content">
-        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-        </svg>
-        <div class="slide__text">
-          <h2 class="slide__text-heading">Project name 4</h2>
-          <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-          <a href="http://hkmbhutto.wix.com/abdulrasheed"
-          class="slide__text-link">Project link</a>
-        </div>
-      </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#ctlink">China Town</a></li>
+        <li><a href="#cclink">Cyber Cafe</a></li>
+        <li><a href="#gslink">General Store</a></li> 
+        <li><a href="#sslink">Stationary</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
     </div>
   </div>
-</div>
-    
-<!--
-    <header class="masthead home" style="
-    margin-top: 0px;
-">
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 id="homeHeading">Dev Services</h1>
-                <p>We provide this and that and some more text here to fill the gap so that we can present the dummy text.</p>
--->
-                <!--<a class="btn btn-primary btn-xl" href="https://campusbox.org/dist/dashboard/signup">Join The Community</a>-->
-<!--
-            </div>
+</nav>
+      
+
+<div class="container-fluid">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+      <div class="container-fluid">
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="assets/images/gs.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p>
         </div>
-    </header>
--->
-<!--
-    <section id="services">
+      </div>
+
+      <div class="item">
+        <img src="assets/images/cf.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="assets/images/ss.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+    </div>
+    
+    <div id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -196,7 +130,7 @@
         <div class="container">
             <div class="row">
                 <div class=" col-md-6 text-center">
-                    <a href="#">
+                    <a href="#ctlink">
                         <div class="services-card">
                             <img src="assets/images/cf.jpg">
                             <h4>China Town</h4>
@@ -205,7 +139,7 @@
                     </a>
                 </div>
                 <div class=" col-md-6 text-center">
-                    <a href="#">
+                    <a href="#cclink">
                         <div class="services-card">
                             <img src="assets/images/cyf.jpg">
                             <h4>Cyber Cafe</h4>
@@ -216,7 +150,7 @@
             </div>
             <div class="row">
                 <div class=" col-md-6 text-center">
-                    <a href="#">
+                    <a href="#gslink">
                         <div class="services-card">
                             <img src="assets/images/gs.jpg">
                             <h4>General Store</h4>
@@ -225,7 +159,7 @@
                     </a>
                 </div>
                 <div class=" col-md-6 text-center">
-                    <a href="#">
+                    <a href="#sslink">
                         <div class="services-card">
                             <img src="assets/images/ss.jpg">
                             <h4>Stationary Shop</h4>
@@ -235,9 +169,9 @@
                 </div>
             </div>
         </div>
-    </section>
--->
-    <section class="row">
+    </div>
+    
+    <section class="row" id="ctlink">
         <div class="col-sm-4">
             <h1 class="heading">China Town</h1>
             <hr>
@@ -250,7 +184,7 @@
         </div>
         <div class="col-sm-1"></div>
     </section>
-        <section class="row" id="china-town-section">
+        <section class="row" id="cclink">
         <div class="col-sm-4">
             <h1 class="heading">Cyber Cafe</h1>
             <hr>
@@ -263,7 +197,7 @@
         </div>
         <div class="col-sm-1"></div>
     </section>
-        <section class="row" id="china-town-section">
+        <section class="row" id="gslink">
         <div class="col-sm-4">
             <h1 class="heading">General Store</h1>
             <hr>
@@ -276,7 +210,7 @@
         </div>
         <div class="col-sm-1"></div>
     </section>
-        <section class="row" id="china-town-section">
+        <section class="row" id="sslink">
         <div class="col-sm-4">
             <h1 class="heading">Stationary</h1>
             <hr>
@@ -291,12 +225,16 @@
     </section>
 
   
-    <div class="call-to-action bg-dark">
-        <div class="container " style="text-align: justify;">
-            <div class="col-md-6 offset-md-3">
-                <h2>About Dev Services</h2>
-                <p>doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ip.
-                </p>
+    <div class="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <h2>About Dev Services</h2>
+                    <p>doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ip.
+                    </p>
+                </div>                
+                <div class="col-sm-3"></div>
             </div>
         </div>
     </div>
@@ -326,125 +264,6 @@
         </div>
     </section>
     <footer><span>Dev Services &copy; 2017</span> . Designed and Developed by <a href="#">Infinity Shark</a></footer>
-    <!-- Bootstrap core JavaScript -->
-    
-<script>
-    
-    
 
-$(document).ready(function() {
-  
-  var $slider = $(".slider"),
-      $slideBGs = $(".slide__bg"),
-      diff = 0,
-      curSlide = 0,
-      numOfSlides = $(".slide").length-1,
-      animating = false,
-      animTime = 500,
-      autoSlideTimeout,
-      autoSlideDelay = 6000,
-      $pagination = $(".slider-pagi");
-  
-  function createBullets() {
-    for (var i = 0; i < numOfSlides+1; i++) {
-      var $li = $("<li class='slider-pagi__elem'></li>");
-      $li.addClass("slider-pagi__elem-"+i).data("page", i);
-      if (!i) $li.addClass("active");
-      $pagination.append($li);
-    }
-  };
-  
-  createBullets();
-  
-  function manageControls() {
-    $(".slider-control").removeClass("inactive");
-    if (!curSlide) $(".slider-control.left").addClass("inactive");
-    if (curSlide === numOfSlides) $(".slider-control.right").addClass("inactive");
-  };
-  
-  function autoSlide() {
-    autoSlideTimeout = setTimeout(function() {
-      curSlide++;
-      if (curSlide > numOfSlides) curSlide = 0;
-      changeSlides();
-    }, autoSlideDelay);
-  };
-  
-  autoSlide();
-  
-  function changeSlides(instant) {
-    if (!instant) {
-      animating = true;
-      manageControls();
-      $slider.addClass("animating");
-      $slider.css("top");
-      $(".slide").removeClass("active");
-      $(".slide-"+curSlide).addClass("active");
-      setTimeout(function() {
-        $slider.removeClass("animating");
-        animating = false;
-      }, animTime);
-    }
-    window.clearTimeout(autoSlideTimeout);
-    $(".slider-pagi__elem").removeClass("active");
-    $(".slider-pagi__elem-"+curSlide).addClass("active");
-    $slider.css("transform", "translate3d("+ -curSlide*100 +"%,0,0)");
-    $slideBGs.css("transform", "translate3d("+ curSlide*50 +"%,0,0)");
-    diff = 0;
-    autoSlide();
-  }
-
-  function navigateLeft() {
-    if (animating) return;
-    if (curSlide > 0) curSlide--;
-    changeSlides();
-  }
-
-  function navigateRight() {
-    if (animating) return;
-    if (curSlide < numOfSlides) curSlide++;
-    changeSlides();
-  }
-
-  $(document).on("mousedown touchstart", ".slider", function(e) {
-    if (animating) return;
-    window.clearTimeout(autoSlideTimeout);
-    var startX = e.pageX || e.originalEvent.touches[0].pageX,
-        winW = $(window).width();
-    diff = 0;
-    
-    $(document).on("mousemove touchmove", function(e) {
-      var x = e.pageX || e.originalEvent.touches[0].pageX;
-      diff = (startX - x) / winW * 70;
-      if ((!curSlide && diff < 0) || (curSlide === numOfSlides && diff > 0)) diff /= 2;
-//      $slider.css("transform", "translate3d("+ (-curSlide*100 - diff) +"%,0,0)");
-//      $slideBGs.css("transform", "translate3d("+ (curSlide*50 + diff/2) +"%,0,0)");
-    });
-  });
-  
-
-  
-  $(document).on("click", ".slider-control", function() {
-    if ($(this).hasClass("left")) {
-      navigateLeft();
-    } else {
-      navigateRight();
-    }
-  });
-  
-  $(document).on("click", ".slider-pagi__elem", function() {
-    curSlide = $(this).data("page");
-    changeSlides();
-  });
-  
-     
-    
-});   
-    
-   
-    </script> 
-   
-    
-   
-
-</body></html>
+</body>
+</html>
