@@ -11,6 +11,8 @@
     <link href="css/index.css" rel="stylesheet" />
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto+Slab:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300, 400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400" rel="stylesheet">
     
     <style>
         body {
@@ -31,7 +33,7 @@
         }
         
         #myCarousel img {
-            height: 550px;
+            height: 580px;
         }
         
    @media (max-width:500px){
@@ -108,13 +110,13 @@
 <div class="container-fluid">
   <div class="slider-container">
        <div  id="banner">
-           <p >
+           <p>
                Diwali Offers Available
            </p>
        </div>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
+    <ol class="carousel-indicators" style="visibility: hidden;">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -124,26 +126,32 @@
     <div class="carousel-inner">
 
       <div class="item active">
-        <img src="assets/images/gs.jpg" alt="Los Angeles" style="width:100%;">
+        <img src="assets/images/d1.jpg" alt="Los Angeles" style="width:100%;">
         <div class="carousel-caption">
+<!--
           <h3>Los Angeles</h3>
           <p>LA is always so much fun!</p>
+-->
         </div>
       </div>
 
       <div class="item">
-        <img src="assets/images/cf.jpg" alt="Chicago" style="width:100%;">
+        <img src="assets/images/d2.jpg" alt="Chicago" style="width:100%;">
         <div class="carousel-caption">
+<!--
           <h3>Chicago</h3>
           <p>Thank you, Chicago!</p>
+-->
         </div>
       </div>
     
       <div class="item">
-        <img src="assets/images/ss.jpg" alt="New York" style="width:100%;">
+        <img src="assets/images/d3.jpg" alt="New York" style="width:100%;">
         <div class="carousel-caption">
+<!--
           <h3>New York</h3>
           <p>We love the Big Apple!</p>
+-->
         </div>
       </div>
   
@@ -167,107 +175,106 @@
            
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Services</h2>
+                    <h2 class="section-heading">Special Offers</h2>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class=" col-md-6 text-center">
-                    <a href="#ctlink">
+                <div class=" col-md-4 text-center">
+                    <a href="#ctlink" class="services-card-link">
                         <div class="services-card">
-                            <img src="assets/images/cf.jpg">
-                            <h4>China Town</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore unde fugiat, ipsam assumenda necessitatibus alias nostrum, maxime expedita veniam non obcaecati, laudantium eius dolorem quo et asperiores dolore quod </p>
+                            <h4>CADBURY CElebrations</h4>
+                            <p>Get Cadbury Celebrations this Diwali starting at just Rs. 200</p>
+                            <img src="assets/images/cb.jpg">
                         </div>
                     </a>
                 </div>
-                <div class=" col-md-6 text-center">
-                    <a href="#cclink">
+                <div class=" col-md-4 text-center">
+                    <a href="#cclink" class="services-card-link">
                         <div class="services-card">
-                            <img src="assets/images/cyf.jpg">
-                            <h4>Cyber Cafe</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore unde fugiat, ipsam assumenda necessitatibus alias nostrum, maxime expedita veniam non obcaecati, l</p>
+                            <h4>SWEETS</h4>
+                            <p>Get Sweets this Diwali starting at just Rs. 550/kg</p>
+                            <img src="assets/images/si.jpg">
                         </div>
                     </a>
                 </div>
-            </div>
-            <div class="row">
-                <div class=" col-md-6 text-center">
-                    <a href="#gslink">
+                <div class=" col-md-4 text-center">
+                    <a href="#gslink" class="services-card-link">
                         <div class="services-card">
-                            <img src="assets/images/gs.jpg">
-                            <h4>General Store</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore unde fugiat, ipsam assumenda necessitatibus alias nostrum, maxime expedita veniam non obcaecati, laudantium eius dolorem quo et asperiores dolore quod </p>
+                            <h4>Dry Fruits</h4>
+                            <p>Get Dry Fruits this Diwali starting at just Rs. 350 </p>
+                            <img src="assets/images/di.png">
                         </div>
                     </a>
                 </div>
-                <div class=" col-md-6 text-center">
-                    <a href="#sslink">
+<!--
+                <div class=" col-md-3 text-center">
+                    <a href="#sslink" class="services-card-link">
                         <div class="services-card">
-                            <img src="assets/images/ss.jpg">
                             <h4>Stationary Shop</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore unde fugiat, ipsam assumenda nequod </p>
+                            <img src="assets/images/ss.jpg">
                         </div>
                     </a>
                 </div>
+-->
             </div>
         </div>
     </div>
     
     <section class="row" id="ctlink">
-        <div class="col-sm-4">
-            <h1 class="heading">China Town</h1>
-            <hr>
-            <img src="assets/images/cf.jpg">
-        </div>
         <div class="col-sm-1"></div>
-        <div class="col-sm-6 discription">
+        <div class="col-sm-5 desc">
+            <h1 class="heading">China Town</h1>
+            <hr> 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
             <a href="#">Link to China Town</a>
         </div>
+        <div class="col-sm-5 discription">
+            <img src="assets/images/cooking.gif">
+        </div>
         <div class="col-sm-1"></div>
     </section>
-        <section class="row" id="cclink">
-        <div class="col-sm-4">
+    <section class="row" id="cclink">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5 desc">
             <h1 class="heading">Cyber Cafe</h1>
-            <hr>
-            <img src="assets/images/cyf.jpg">
-        </div>            
-        <div class="col-sm-1"></div>
-        <div class="col-sm-6 discription">
+            <hr> 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-            <a href="#">Link to Cyber Cafe</a>
+            <a href="#">Link to China Town</a>
+        </div>
+        <div class="col-sm-5 discription">
+            <img src="assets/images/noodles.gif">
         </div>
         <div class="col-sm-1"></div>
     </section>
-        <section class="row" id="gslink">
-        <div class="col-sm-4">
+    <section class="row" id="gslink">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5 desc">
             <h1 class="heading">General Store</h1>
-            <hr>
-            <img src="assets/images/gs.jpg">
-        </div>
-        <div class="col-sm-1"></div>
-        <div class="col-sm-6 discription">
+            <hr> 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-            <a href="#">Link to General Store</a>
+            <a href="#">Link to China Town</a>
+        </div>
+        <div class="col-sm-5 discription">
+            <img src="assets/images/cf.jpg">
         </div>
         <div class="col-sm-1"></div>
     </section>
-        <section class="row" id="sslink">
-        <div class="col-sm-4">
+    <section class="row" id="sslink">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5 desc">
             <h1 class="heading">Stationary</h1>
-            <hr>
-            <img src="assets/images/ss.jpg">
-        </div>
-        <div class="col-sm-1"></div>
-        <div class="col-sm-6 discription">
+            <hr> 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-            <a href="#">Link to Stationary</a>
+            <a href="#">Link to China Town</a>
+        </div>
+        <div class="col-sm-5 discription">
+            <img src="assets/images/stationary.gif">
         </div>
         <div class="col-sm-1"></div>
     </section>
-
   
     <div class="call-to-action">
         <div class="container">
