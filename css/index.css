@@ -1,6 +1,7 @@
 body {
     padding-top: 55px;
-    background: #ededef;
+    background: #e5e5e5;
+/*    background: #ededed;*/
 }
 
 body * {
@@ -87,6 +88,12 @@ a.services-card-link {
 
 /*********************************/
 /**Sections**/
+
+#services-title {
+    text-align: center;
+    font-weight: 300;
+}
+
 section {
 /*    background: #fff;*/
     padding-bottom: 0;
@@ -100,7 +107,7 @@ section .desc {
     padding: 20px;
 }
 
-section:nth-child(even) .desc {
+section:nth-child(odd) .desc {
     background: #333;
     color: #fff;
 }
