@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Heat Distortion Effect | Demo 3: Wok Heat</title>
+	<meta name="description" content="Demo for tutorial 'Animated Heat Distortion Effects with WebGL'" />
+	<meta name="keywords" content="heat, haze, effect, webgl, svg, animation, web development, tutorial" />
+	<meta name="author" content="Lucas Bebber for Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo1.css" />
+	<link rel="stylesheet" type="text/css" href="css/cooking.css" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <meta name="viewport" content="width = 1050, user-scalable = no" />
+<script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<style>
+    .codrops-demos{
+        font-size: 25px;
+    }
+    .curtained{
+        height: 0px !important;
+        transition: 1s;
+    }
+    
+    .dontshow{
+        display: none !important;
+    }
+    
+    .bodyProp{
+            background-image: url('img/chinese.jpg');
+            background-size: 100%;
+    }
+    
+    #bg{
+        position: absolute;
+        top: 0px;
+        bottom:0px;
+        left: 0px;
+        right: 0px;
+        z-index: -100;
+    }
+    .Background-canvas{
+    transition: 1s !important;
+    }
+    
+</style>
+<body class="demo-3">
+	<div class="container" id="delete">
+      		
+		<div class="wrap">
+		<header class="codrops-header" style="text-align:center">
+			
+			<h1>DEV CHINA TOWN</h1>
+			<nav class="codrops-demos">
+				<a id="curtain"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+			</nav>
+		</header>
+			<div class="Background">
+				<canvas class="Background-canvas"></canvas>
+			</div>
+		</div>
+		
+	</div>
+	<div class="flipbook-viewport dontshow">
+	<img src="img/chinese.jpg" id="bg">
+<!--	<h2>Menu</h2>-->
+	        <nav id="backtoTop" class="codrops-demos" style="display:block;text-align:center;margin-top:20px;">
+				<a id="curtain"><i class="fa fa-chevron-up" aria-hidden="true" style="color:yellow;"></i></a>
+			</nav>
+			<h1 style="text-align:center;color:yellow;margin-top:-25px;">DEV CHINA TOWN</h1>
+			
+	<div class="container">
+		<div class="flipbook">
+			<div style="background-image:url(pages/menu_front.jpg)"></div>
+			<div style="background-image:url(pages/menu_left.jpg)"></div>
+			<div style="background-image:url(pages/menu_right.jpg)"></div>
+			<div style="background-image:url(pages/menu_back.jpg)"></div>
+			
+		</div>
+	</div>
+</div>
+	
+	<!-- /container -->
+	<script src="js/cooking.js"></script>
+	<script type="text/javascript">
+
+function loadApp() {
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Width
+
+			width:922,
+			
+			// Height
+
+			height:600,
+
+			// Elevation
+
+			elevation: 50,
+			
+			// Enable gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['lib/turn.js'],
+	nope: ['lib/turn.html4.min.js'],
+	both: ['css/basic.css'],
+	complete: loadApp
+});
+
+</script>
+	<script>
+    
+        window.addEventListener("load",function(){
+            
+       function blink(selector){
+$(selector).fadeOut('slow', function(){
+    $(this).fadeIn('slow', function(){
+        blink(this);
+    });
+});
+}
+
+blink('.codrops-demos'); document.getElementById("curtain").addEventListener("click",function(){
+             $(".Background-canvas").addClass("curtained");
+             setTimeout(function(){ 
+             $("#delete").css("display","none");
+             }, 900);
+            setTimeout(function(){ 
+             $(".flipbook-viewport").removeClass("dontshow");
+//             $("body").addClass("bodyProp");   
+             }, 930);
+             
+        });
+        
+        document.getElementById("backtoTop").addEventListener("click",function(){
+           $(".flipbook-viewport").addClass("dontshow");
+            $("#delete").css("display","block");
+            setTimeout(function(){ 
+             $(".Background-canvas").removeClass("curtained");
+             }, 100);
+            
+        });
+           
+        })
+        
+    </script>
+</body>
+
+</html>
