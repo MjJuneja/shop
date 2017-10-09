@@ -440,8 +440,8 @@
         <div class="col-sm-5 desc">
             <h1 class="heading">China Town</h1>
             <hr> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-            <a href="menu/index3.html" style="color:black">Link to China Town</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            <a href="menu/index3.html" id="chinalink" style="color:yellow !important;">Link to China Town</a>
         </div>
         <div class="col-sm-5 discription">
             <img src="assets/images/cooking.gif">
@@ -453,7 +453,7 @@
         <div class="col-sm-5 desc">
             <h1 class="heading">Cyber Cafe</h1>
             <hr> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
             <a href="#">Link to China Town</a>
         </div>
         <div class="col-sm-5 discription">
@@ -466,8 +466,8 @@
         <div class="col-sm-5 desc">
             <h1 class="heading">General Store</h1>
             <hr> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-            <a href="#">Link to China Town</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+<!--            <a href="#">Link to China Town</a>-->
         </div>
         <div class="col-sm-5 discription">
             <img src="assets/images/cf.jpg">
@@ -479,8 +479,8 @@
         <div class="col-sm-5 desc">
             <h1 class="heading">Stationary</h1>
             <hr> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-            <a href="#">Link to China Town</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+<!--            <a href="#">Link to China Town</a>-->
         </div>
         <div class="col-sm-5 discription">
             <img src="assets/images/stationary.gif">
@@ -528,5 +528,19 @@
     </section>
     <footer><span>Dev Services &copy; 2017</span> . Designed and Developed by <a href="http://www.infinityshark.com">Infinity Shark</a></footer>
     </div>
+    <script>
+//         window.addEventListener("load",function(){
+            
+       function blink(selector){
+$(selector).fadeOut('slow', function(){
+    $(this).fadeIn('slow', function(){
+        blink(this);
+    });
+});
+}
+
+blink('#chinalink'); 
+//         });
+    </script>
 </body>
 </html>
