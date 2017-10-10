@@ -186,7 +186,7 @@ section img {
 }
 
 .call-to-action p {
-    color: #129c83;
+/*    color: #129c83;*/
 }
 
 /****************************/
@@ -249,7 +249,7 @@ section img {
 /*****************************/
 /**Footer**/
 footer {
-    background: #fff;
+/*    background: #fff;*/
     padding: 25px;
     text-align: center;
     font-size: 13px;
@@ -271,8 +271,8 @@ section {
 
 @media (max-width: 767px) {
     
-    section .discription {
-        margin-top: 10px;
+    .desc {
+        height: auto !important ;
     }
     
     #contact  {
